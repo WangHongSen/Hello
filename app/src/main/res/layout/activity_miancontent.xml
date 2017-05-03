@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maincontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maincontentbg">
+
+    <Button
+        android:id="@+id/maincontent_button_sport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="运动不息"
+        />
+
+    <Button
+        android:id="@+id/maincontent_button_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弃书余用"
+        android:layout_above="@+id/maincontent_button_sport"
+        android:layout_alignLeft="@+id/maincontent_button_sport"
+        android:layout_alignStart="@+id/maincontent_button_sport"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:ir="@+id/maincontent_button_travel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/maincontent_button_book"
+        android:text="一起去旅游吧"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/maincontent_button_car"
+        android:layout_below="@id/maincontent_button_sport"
+        android:layout_marginTop="30dp"
+        android:text="出行拼车"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/messages"
+      />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/personcenter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/maincontent_button_car"
+        android:layout_alignEnd="@id/maincontent_button_car"
+        />
+</RelativeLayout>
